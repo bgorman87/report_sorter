@@ -1,0 +1,635 @@
+[
+    {
+        "project_number":"B-0020302-1",
+		"contract_number":"NOTNSTIR",
+        "project_description":"BrentonSuites",
+        "project_directory":"G:\\148\\B_Projects\\B-0020302-1 WM Fares Group THE MILLENNIUM\\1_Deliverables",
+        "project_email_to":"michael.salah@wmfares.com; dhasler@consultpinto.com",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>"
+    },
+	{
+        "project_number":"P-0015739-0-01",
+		"contract_number":"F12-07-01-01",
+        "project_description":"SheetHarbourSchool",
+        "project_directory":"G:\\148\\P_Projects\\P-0015739_NSTIR\\1_Deliverables\\0-01-Sheet Harbour (East District) School",
+        "project_email_to":"Kate.McDonald@novascotia.ca; Manthorne, James S <james.manthorne@novascotia.ca>",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"P-0015739-0-04",
+		"contract_number":"NA",
+        "project_description":"ValleyRegionalHospital",
+        "project_directory":"G:\\148\\P_Projects\\P-0015739_NSTIR\\1_Deliverables\\0-04-VRH Dialysis Unit Add-On\\Deliverables",
+        "project_email_to":"Kate.McDonald@novascotia.ca; Manthorne, James S <james.manthorne@novascotia.ca>",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"P-0015148-0-21-001",
+		"contract_number":"2018-052",
+        "project_description":"Hwy102&Hwy103Interchange",
+        "project_directory":"G:\\148\\P_Projects\\P-0015148_NSTIR_Concrete_Structures\\1_Deliverables\\0-21_Hwy 102, 103 Interchange",
+        "project_email_to":"colin.weaver@novascotia.ca; Manthorne, James S <james.manthorne@novascotia.ca>",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-00",
+		"contract_number":"2019-154",
+        "project_description":"Hwy102_EnfieldBridge",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-00_NSTIR_Bridge Repair_NS\\1_Deliverables\\001_Enfield Bridge Repairs\\Reports",
+        "project_email_to":"raymond.daniels@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-01",
+		"contract_number":"NA",
+        "project_description":"BridgetownChimney",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-01_NSTIR_Bridgetown School_NS\\1_Deliverables\\Reports",
+        "project_email_to":"nicholas.goodine@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-02-0-001-001",
+		"contract_number":"NA",
+        "project_description":"HalfwayRiver_PC",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-02_NSTIR_Halfway River Aboiteau_NS\\1_Deliverables",
+        "project_email_to":"matthew.oblenis@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-02-0-002-001",
+		"contract_number":"NA",
+        "project_description":"HalfwayRiver_CIP",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-02_NSTIR_Halfway River Aboiteau_NS\\1_Deliverables",
+        "project_email_to":"matthew.oblenis@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-03",
+		"contract_number":"2019-026",
+        "project_description":"Route337",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-03_NSTIR_2019-026 Route 337_NS\\1_Deliverables\\Reports",
+        "project_email_to":"andrew.macpherson@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-04-0-001-001",
+		"contract_number":"2019-006",
+        "project_description":"McInnisGlenBrookBridge",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-04_NSTIR_2019-006 McInnis Glen Bridge\\1_Deliverables\\Reports",
+        "project_email_to":"matt.clarke@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-04-0-001-004",
+		"contract_number":"2019-006",
+        "project_description":"McInnisGlenBrookBridge_PC",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-04_NSTIR_2019-006 McInnis Glen Bridge\\1_Deliverables\\Reports",
+        "project_email_to":"matt.clarke@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-05",
+		"contract_number":"2018-069",
+        "project_description":"Hwy101DigbytoMarshalltown",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-05_NSTIR_2018-069_Hwy 101_Digby-Marshalltown\\1_Deliverables\\Reports",
+        "project_email_to":"brian.boudreau@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-06",
+		"contract_number":"2019-009",
+        "project_description":"Hwy101ConcPanelReplacement",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-06_NSTIR_2019-009 Hwy 101 Concrete Panel Replacement\\1_Deliverables\\Reports",
+        "project_email_to":"matthew.oblenis@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-07-0-001-001",
+		"contract_number":"2019-057-2",
+        "project_description":"Falmouth_CIP",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-07_NSTIR_2019-057-2_Hwy 101, Falmouth Railroad\\1_Deliverables\\Reports",
+        "project_email_to":"lyle.russell@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-07-0-001-004",
+		"contract_number":"2019-057-2",
+        "project_description":"Falmouth_PC",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-07_NSTIR_2019-057-2_Hwy 101, Falmouth Railroad\\1_Deliverables\\Reports",
+        "project_email_to":"lyle.russell@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-07-0-002-001",
+		"contract_number":"2019-057-3",
+        "project_description":"Trunk1_CIP",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-07_NSTIR_2019-057-2_Hwy 101, Falmouth Railroad\\1_Deliverables\\Reports",
+        "project_email_to":"lyle.russell@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-07-0-002-004",
+		"contract_number":"2019-057-3",
+        "project_description":"Trunk1_PC",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-07_NSTIR_2019-057-2_Hwy 101, Falmouth Railroad\\1_Deliverables\\Reports",
+        "project_email_to":"lyle.russell@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-08-0-001-001",
+		"contract_number":"2019-057",
+        "project_description":"HebbvilleHighwayBaseOps",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-08_NSTIR_Hebbville Base Ops\\1_Deliverables\\Reports",
+        "project_email_to":"greg.moir@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-09-0-001-001",
+		"contract_number":"NA",
+        "project_description":"QEIIDicksonBuilding",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-09_NSTIR_QEII Dickson Building\\1_Deliverables\\Reports",
+        "project_email_to":"james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-10-0-001-001",
+		"contract_number":"2019-053",
+        "project_description":"VictoriaRoadOverpass",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-10_NSTIR_2019-053_Victoria Road Overpass\\1_Deliverables\\Reports",
+        "project_email_to":"raymond.daniels@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-11-0-001-001",
+		"contract_number":"NA",
+        "project_description":"10AcadiaSt.",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-11_NSTIR-10 Acadia Street\\1_Deliverables\\Reports",
+        "project_email_to":"james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-12-0-001-001",
+		"contract_number":"2019-047",
+        "project_description":"EastRiverBridge",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-12_NSTIR-East River Bridge (LUN004)\\1_Deliverables\\Reports",
+        "project_email_to":"errol.webber@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-13-0-001-001",
+		"contract_number":"2019-088-1",
+        "project_description":"NineMileRiverNB",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-13_ NSTIR-2019-088-1-NineMileRiver Bridge N\\1_Deliverables\\Reports",
+        "project_email_to":"stephanie.warren@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-14-0-001-001",
+		"contract_number":"2019-088-2",
+        "project_description":"NineMileRiverSB",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-14_ NSTIR-2019-088-2-NineMileRiver Bridge S\\1_Deliverables\\Reports",
+        "project_email_to":"stephanie.warren@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-15-0-001-001",
+		"contract_number":"2019-088-3",
+        "project_description":"LantzConnector",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-15_NSTIR-2019-088-3-Connector & Interchange\\1_Deliverables\\Reports",
+        "project_email_to":"stephanie.warren@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-16-0-001-001",
+		"contract_number":"2019-088-4",
+        "project_description":"LantzUnderpass",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-16_NSTIR-2019-088-4 - Lantz Underpass\\1_Deliverables\\Reports\\Lantz Underpass - CIP",
+        "project_email_to":"stephanie.warren@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-16-0-001-004",
+		"contract_number":"2019-088-4",
+        "project_description":"LantzUnderpass_PC",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-16_NSTIR-2019-088-4 - Lantz Underpass\\1_Deliverables\\Reports\\Lantz Underpass - PC",
+        "project_email_to":"stephanie.warren@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-17-0-001-001",
+		"contract_number":"2019-088-5",
+        "project_description":"LantzDetourStructure",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-17_NSTIR-2019-088-5 - Detour Structure\\1_Deliverables\\Reports",
+        "project_email_to":"stephanie.warren@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-18-0-001-001",
+		"contract_number":"2019-088-6",
+        "project_description":"Hwy102Widening",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-18_ NSTIR-2019-088-6 - Hwy 102 Widening\\1_Deliverables\\Reports",
+        "project_email_to":"stephanie.warren@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-19-0-001-001",
+		"contract_number":"2019-051",
+        "project_description":"Highway101BridgeRepairs",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-19_NSTIR-2019-051 Hwy 101 Bridge Repairs\\1_Deliverables\\Reports",
+        "project_email_to":"mitchell.conrad@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-20-0-001-001",
+		"contract_number":"NA",
+        "project_description":"DigbyHospital",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-20_NSTIR_Digby Hospital\\1_Deliverables\\Reports",
+        "project_email_to":"james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-21",
+		"contract_number":"2019-073",
+        "project_description":"GrantmyreBrook",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-21_NSTIR - 2019-073 Grantmyre Brook\\1_Deliverables\\Reports",
+        "project_email_to":"David Quinn <charles.hooper@novascotia.ca>; Manthorne, James <james.manthorne@novascotia>",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-22",
+		"contract_number":"2019-119",
+        "project_description":"TroopBridge",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-22_NSTIR_ 2019-119-1_ Troop Bridge\\1_Deliverables\\Reports",
+        "project_email_to":"logan.webb@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-23",
+		"contract_number":"2019-107-1",
+        "project_description":"LowerBlackBrook",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-23_NSTIR_ 2019-107-1_ Lower Black Brook\\1_Deliverables\\Reports",
+        "project_email_to":"Alex.Small@novascotia.ca, james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-24",
+		"contract_number":"2016-068",
+        "project_description":"CornwallisRiverBridge",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-24_NSTIR -Cornwallis River Bridge\\1_Deliverables\\Reports",
+        "project_email_to":"ken.crowell@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-25",
+		"contract_number":"2019-099",
+        "project_description":"Trunk30Bridges",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-25_NSTIR_2019-099_Trunk 30 Bridges\\1_Deliverables\\Reports",
+        "project_email_to":"haiser.alsaeq@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-26",
+		"contract_number":"2019-089",
+        "project_description":"Hwy101Exit10Ramp",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-26_NSTIR -Highway 101, Exit 10 Ramp\\1_Deliverables\\Reports",
+        "project_email_to":"mitchell.conrad@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-27",
+		"contract_number":"2019-032",
+        "project_description":"MooseRiver",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-27_NSTIR_2019-032-1_ Moose River Road\\1_Deliverables\\Reports",
+        "project_email_to":"adam.osborne@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-28",
+		"contract_number":"2019-101",
+        "project_description":"AvonRiver",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-28_NSTIR_2019-101-1_ Avon River\\1_Deliverables\\Reports",
+        "project_email_to":"raymond.daniels@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-29",
+		"contract_number":"2020-EXAMPLE",
+        "project_description":"Trunk3Roundabout",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-29_NSTIR_2019-120_Trunk 3 Roundabout\\1_Deliverables",
+        "project_email_to":"errol.webber@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-30-0-001-003",
+		"contract_number":"2019-113-2",
+        "project_description":"GoatLake",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-30_NSTIR_Cornwall Road _Goat Lake\\1_Deliverables",
+        "project_email_to":"errol.webber@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-30-0-001-001",
+		"contract_number":"2019-113-3",
+        "project_description":"CornwallRoad",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-30_NSTIR_Cornwall Road _Goat Lake\\1_Deliverables",
+        "project_email_to":"errol.webber@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-31-0-001-003",
+		"contract_number":"2019-118",
+        "project_description":"AkerleyBlvdUP_CIP",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-31_Akerley Dr Burrnside Dr Underpasses\\1_Deliverables\\Akerley Blvd UP - CIP",
+        "project_email_to":"darren.dennis@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-31-0-001-001",
+		"contract_number":"2019-118",
+        "project_description":"AkerleyBlvdUP_PC",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-31_Akerley Dr Burrnside Dr Underpasses\\1_Deliverables\\Akerley Blvd. UP - Precast",
+        "project_email_to":"darren.dennis@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-31-0-001-004",
+		"contract_number":"2019-118",
+        "project_description":"BurnsideUP_CIP",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-31_Akerley Dr Burrnside Dr Underpasses\\1_Deliverables\\Burnside Drive UP - CIP",
+        "project_email_to":"darren.dennis@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-31-0-001-002",
+		"contract_number":"2019-118",
+        "project_description":"BurnsideUP_PC",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-31_Akerley Dr Burrnside Dr Underpasses\\1_Deliverables\\Burnside Drive UP - Precast",
+        "project_email_to":"darren.dennis@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-31-0-001-007",
+		"contract_number":"2019-118",
+        "project_description":"PipeHaunch_CIP",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-31_Akerley Dr Burrnside Dr Underpasses\\1_Deliverables\\Pipe Haunch",
+        "project_email_to":"darren.dennis@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-31-0-001-003",
+		"contract_number":"2019-118",
+        "project_description":"AkerleyBlvdUP_CIP",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-31_Akerley Dr Burrnside Dr Underpasses\\1_Deliverables\\Akerley Blvd UP - CIP",
+        "project_email_to":"darren.dennis@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-32",
+		"contract_number":"NA",
+        "project_description":"SaltShed",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-32_171 Oakmount Dr_Salt Storage Shed\\1_Deliverables\\Reports",
+        "project_email_to":"james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-33",
+		"contract_number":"2019-135",
+        "project_description":"CollierBridge",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-33_2019-135 - Collier Bridge\\1_Deliverables\\Reports",
+        "project_email_to":"raymond.daniels@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-34-0-001-004",
+		"contract_number":"2019-117",
+        "project_description":"BenneryBrookBridge_CIP",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-34_2019-117 Bennery Brook Bridge\\1_Deliverables\\Reports\\CIP",
+        "project_email_to":"paige.vincent@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-34-0-001-001",
+		"contract_number":"2019-117",
+        "project_description":"BenneryBrookBridge_PC",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-34_2019-117 Bennery Brook Bridge\\1_Deliverables\\Reports\\Precast",
+        "project_email_to":"paige.vincent@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-35",
+		"contract_number":"NA",
+        "project_description":"MiddletonMed",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-35_Middleton Medical Center\\1_Deliverables\\Reports",
+        "project_email_to":"james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-36-0-001-004",
+		"contract_number":"2019-129",
+        "project_description":"PetitPassageFerryCrossing_CIP",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-36_NSTIR Petit Passage Ferry Crossing\\1_Deliverables\\Reports\\CIP",
+        "project_email_to":"brian.boudreau@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-36-0-001-001",
+		"contract_number":"2019-129",
+        "project_description":"PetitPassageFerryCrossing_PC",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-36_NSTIR Petit Passage Ferry Crossing\\1_Deliverables\\Reports\\Precast",
+        "project_email_to":"brian.boudreau@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900239-37",
+		"contract_number":"2018-125",
+        "project_description":"OverlandBridge",
+        "project_directory":"G:\\2019_Deltek\\1900239_NSTIR_NS-concrete\\1900239-37_2018-125 - Overland Bridge\\1_Deliverables\\Reports",
+        "project_email_to":"kimberly.a.macpherson@novascotia.ca; james.manthorne@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"1900240",
+		"contract_number":"NOTNSTIR",
+        "project_description":"5599FenwickSt.",
+        "project_directory":"G:\\2019_Deltek\\1900240_Jamm Const_Fenwick Concrete Testing_Halifax\\Project\\1_Deliverables\\Reports",
+        "project_email_to":"jm@templetonproperties.ca; joenarab@gmail.com",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>"
+    },
+	{
+        "project_number":"1901454",
+		"contract_number":"NOTNSTIR",
+        "project_description":"CoastalRestoration",
+        "project_directory":"G:\\2019_Deltek\\1901454_Coastal Restoration_Material Testing 2019\\1_Deliverables\\Reports",
+        "project_email_to":"aaron@coastalrestoration.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>"
+    },
+	{
+        "project_number":"2000745",
+		"contract_number":"NOTNSTIR",
+        "project_description":"Cumberland",
+        "project_directory":"G:\\2020_Deltek\\2000745_Cumberland_General Testing\\2000745.000_General Testing\\Project\\1_Deliverables",
+        "project_email_to":"byron.barnes@millergroup.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>"
+    },
+	{
+        "project_number":"2000746",
+		"contract_number":"NOTNSTIR",
+        "project_description":"Dexter",
+        "project_directory":"G:\\2020_Deltek\\2000746_Dexter_General Testing\\2000746.000_General Testing\\Project\\1_Deliverables\\Concrete",
+        "project_email_to":"sroach@dexter.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>;cmullins@dexter.ca; jmacewen@dexter.ca"
+    },
+	{
+        "project_number":"2000751",
+		"contract_number":"NOTNSTIR",
+        "project_description":"Ocean",
+        "project_directory":"G:\\2020_Deltek\\2000751_Ocean_General Testing\\2000751.000_General Testing\\Project\\1_Deliverables\\Compaction",
+        "project_email_to":"jon@oceancontractors.ca; steve@oceancontractors.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>"
+    },
+	{
+        "project_number":"2001694",
+		"contract_number":"NOTNSTIR",
+        "project_description":"ARCP_HalifaxWaterPatching",
+        "project_directory":"G:\\2020_Deltek\\2001694_ARCP_2020 General Materials Testing\\1_Deliverables\\Reports\\Compaction\\Halifax Water Patching",
+        "project_email_to":"greg.macdonald@arcp.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; shawn.taylor@arcp.ca"
+    },
+	{
+        "project_number":"2000061.000",
+		"contract_number":"FO1-55-02-01",
+        "project_description":"JLIlsley",
+        "project_directory":"G:\\2020_Deltek\\2000061_NSTIR_Concrete\\2000061.000_JL Ilsley School\\1_Deliverables\\Reports",
+        "project_email_to":"krista.ranahan@novascotia.ca; Manthorne, James S <james.manthorne@novascotia.ca>",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+    {
+        "project_number":"2000061.001.0001.0001",
+		"contract_number":"2020-EXAMPLE",
+        "project_description":"Highway103Twinning_PC_BowaterSpillway",
+        "project_directory":"G:\\2020_Deltek\\2000061_NSTIR_Concrete\\2000061.001_Highway 103 Twinning\\1_Deliverables\\Reports\\Bowater Mersey Road Spillway Bridge\\PC",
+        "project_email_to":"",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+    {
+        "project_number":"2000061.001.0001.0002",
+		"contract_number":"2020-EXAMPLE",
+        "project_description":"Hwy103Twinning_PC_PenstockPipelineBridge",
+        "project_directory":"G:\\2020_Deltek\\2000061_NSTIR_Concrete\\2000061.001_Highway 103 Twinning\\1_Deliverables\\Reports\\Penstock Pipeline Bridge\\PC",
+        "project_email_to":"",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+    {
+        "project_number":"2000061.002.0001.0001",
+		"contract_number":"2020-EXAMPLE",
+        "project_description":"Highway101Twinning_PC",
+        "project_directory":"G:\\2020_Deltek\\2000061_NSTIR_Concrete\\2000061.002_Highway 101 Twinning\\1_Deliverables\\Reports\\Precast",
+        "project_email_to":"lyle.russell@novascotia.ca; Manthorne, James S <james.manthorne@novascotia.ca>",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+    {
+        "project_number":"2000061.002.0001.0004",
+		"contract_number":"2020-EXAMPLE",
+        "project_description":"Highway101Twinning_WindsorRailroadOP",
+        "project_directory":"G:\\2020_Deltek\\2000061_NSTIR_Concrete\\2000061.002_Highway 101 Twinning\\1_Deliverables\\Reports\\CIP",
+        "project_email_to":"lyle.russell@novascotia.ca; Manthorne, James S <james.manthorne@novascotia.ca>",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+    {
+        "project_number":"2000061.003.0001.0001",
+		"contract_number":"2020-EXAMPLE",
+        "project_description":"MorrisIslandBridge",
+        "project_directory":"G:\\2020_Deltek\\2000061_NSTIR_Concrete\\2000061.003_Morris Island Bridge\\1_Deliverables\\Reports\\CIP",
+        "project_email_to":"brett.trask@novascotia.ca; Manthorne, James S <james.manthorne@novascotia.ca>",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+    {
+        "project_number":"2000061.003.0001.0003",
+		"contract_number":"2020-EXAMPLE",
+        "project_description":"MorrisIslandBridge_PC",
+        "project_directory":"G:\\2020_Deltek\\2000061_NSTIR_Concrete\\2000061.003_Morris Island Bridge\\1_Deliverables\\Reports\\Precast",
+        "project_email_to":"brett.trask@novascotia.ca; Manthorne, James S <james.manthorne@novascotia.ca>",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+    {
+        "project_number":"2000061.004",
+		"contract_number":"2020-EXAMPLE",
+        "project_description":"NSHBoiler_296PleasantSt",
+        "project_directory":"G:\\2020_Deltek\\2000061_NSTIR_Concrete\\2000061.004 - NS Hospital Boiler Plant (296 Pleasant St.)\\1_Deliverables\\Reports",
+        "project_email_to":"Moir, Greg F <Greg.Moir@novascotia.ca>",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+    {
+        "project_number":"2000061.005",
+		"contract_number":"2020-EXAMPLE",
+        "project_description":"Hwy102CNR",
+        "project_directory":"G:\\2020_Deltek\\2000061_NSTIR_Concrete\\2000061.005_Hwy 102 NB CNR\\1_Deliverables\\Reports",
+        "project_email_to":"rachel.perry@novascotia.ca",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+    {
+        "project_number":"2000061.006",
+		"contract_number":"2020-EXAMPLE",
+        "project_description":"SpringvilleBridge_PC",
+        "project_directory":"G:\\2020_Deltek\\2000061_NSTIR_Concrete\\2000061.006_Springville Bridge (2020-039)\\1_Deliverables\\Reports\\Precast",
+        "project_email_to":"MacDonald, Keith <Keith.MacDonald@novascotia.ca>",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+    {
+        "project_number":"2000061.007",
+		"contract_number":"2020-EXAMPLE",
+        "project_description":"Highway111",
+        "project_directory":"G:\\2020_Deltek\\2000061_NSTIR_Concrete\\2000061.007_Hwy 111\\1_Deliverables\\Reports",
+        "project_email_to":"colin.weaver@novascotia.ca; Manthorne, James S <james.manthorne@novascotia.ca>",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+    {
+        "project_number":"2000061.008.0001",
+		"contract_number":"2020-EXAMPLE",
+        "project_description":"ConcreteLaboratoryTesting",
+        "project_directory":"G:\\2020_Deltek\\2000061_NSTIR_Concrete\\2000061.008_ConcreteLaboratoryTesting\\1_Deliverables\\Reports",
+        "project_email_to":"Verge, Chris' <Chris.Verge@novascotia.ca>",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"2000061.009",
+		"contract_number":"2020-021-1",
+        "project_description":"BeechvilleOverpasses",
+        "project_directory":"G:\\2020_Deltek\\2000061_NSTIR_Concrete\\2000061.009_Beechville Overpasses_Hwy 103\\1_Deliverables\\Reports",
+        "project_email_to":"raymond.daniels@novascotia.ca; david.anderson@novascotia.ca; Manthorne, James S <james.manthorne@novascotia.ca>",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+    {
+
+        "project_number":"2000061.011",
+		"contract_number":"2020-EXAMPLE",
+        "project_description":"Hwy102",
+        "project_directory":"G:\\2020_Deltek\\2000061_NSTIR_Concrete\\2000061.011_ 2020-004 - Highway 102\\1_Deliverables\\Reports",
+        "project_email_to":"Verge, Chris <Chris.Verge@novascotia.ca>",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+    {
+        "project_number":"2000061.012",
+		"contract_number":"2020-EXAMPLE",
+        "project_description":"Hwy101WildlifeCr",
+        "project_directory":"G:\\2020_Deltek\\2000061_NSTIR_Concrete\\2000061.012_2020-069 - Hwy 101 Wildlife Cr\\1_Deliverables\\Reports",
+        "project_email_to":"",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+    {
+        "project_number":"2000061.013",
+		"contract_number":"2020-EXAMPLE",
+        "project_description":"Pratt&WhitneyDr",
+        "project_directory":"G:\\2020_Deltek\\2000061_NSTIR_Concrete\\2000061.013_2020-070 - Pratt & Whitney Dr\\1_Deliverables\\Reports",
+        "project_email_to":"",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    },
+	{
+        "project_number":"2000061.014",
+		"contract_number":"2020-EXAMPLE",
+        "project_description":"DunbrackSt",
+        "project_directory":"G:\\2020_Deltek\\2000061_NSTIR_Concrete\\2000061.013_2020-070 - Pratt & Whitney Dr\\1_Deliverables\\Reports",
+        "project_email_to":"",
+        "project_email_cc":"Peter Salah <Peter.Salah@englobecorp.com>; Brendon Colwill <Brendon.Colwill@englobecorp.com>; Chisholm, Jim A <Jim.Chisholm@novascotia.ca>; O'Connor, Sean <sean.oconnor@novascotia.ca>; Marlin, Adam J <adam.marlin@novascotia.ca>"
+    }
+]
