@@ -34,25 +34,30 @@ break_strengths = []
 class ItemFound(Exception):
     pass
 
+class WorkerSignals(QObject):
+    
+    finished = pyqtSignal()
+    error = pyqtSignal(tuple)
+    result = pyqtSignal(list)
+    progress = pyqtSignal(int)
 
-class WorkerAnalyzeThread(QThread):
-    analyze_complete = pyqtSignal(list)
-    analyze_progress = pyqtSignal(int)
+
+class WorkerAnalyzeThread(QRunnable):
 
     def __init__(self, fileName, debug, analyzed):
         super(WorkerAnalyzeThread, self).__init__()
         self.f = fileName
         self.debug = debug
         self.analyzed = analyzed
+        self.signals = WorkerSignals()
 
+    @pyqtSlot()
     def run(self):
         # create a sqlite3 table in memory in order to easily sort and manipulate the analyzed results
         self.db = sqlite3.connect(':memory:')
         self.cur = self.db.cursor()
         self.cur.execute('''CREATE TABLE files (Project TEXT, Date DATE, Type TEXT, Set_No TEXT, Age INTEGER)''')
-        # till dexter number identification uin place use 00000000
-        global break_strengths
-        dexter_number = "0000000"
+        
         # Each pdf page is stored as image info in an array called images_jpg
         images_jpeg = convert_from_path(self.f, poppler_path=poppler_path)
         # initialize variables in case no pages detected, prevents crashing
@@ -687,8 +692,8 @@ class WorkerAnalyzeThread(QThread):
         data = rename_path + "%%" + rename_path_project_dir
         returns = [print_string, file_title, data, project_number, project_number_short]
         self.cur.execute("DELETE From files")
-        self.analyze_progress.emit(100)
-        self.analyze_complete.emit(returns)
+        self.signals.progress.emit(100)
+        self.signals.result.emit(returns)
 
     def analyze_image(self, img_path):
         pytesseract.pytesseract.tesseract_cmd = tesseract_path

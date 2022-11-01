@@ -21,154 +21,158 @@ poppler_path = str(os.path.abspath(os.path.join(os.getcwd(), r"poppler\bin")))
 
 
 def output(self):
-    self.outputBox.appendPlainText("Analyzing...\n")
+    self.output_box.appendPlainText("Analyzing...\n")
 
 
 # noinspection PyTypeChecker
 class MainWindow(QtWidgets.QMainWindow):
 
-    def __init__(self, *args, **kwargs):
-        super(MainWindow, self).__init__(*args, **kwargs)
-        object.__init__(self)
-        self.analyzeWorker = None
-        self.fileNames = None 
-        self.analyzed = False
-        self.progress = 0
-        self.centralwidget = QtWidgets.QWidget()
-        self.layoutGrid = QtWidgets.QGridLayout()
-        self.tabWidget = QtWidgets.QTabWidget()
-        self.label = QtWidgets.QLabel()
-        self.tab = QtWidgets.QWidget()
-        self.progressBar = QtWidgets.QProgressBar()
-        self.gridLayout = QtWidgets.QGridLayout(self.tab)
-        self.SelectFiles = QtWidgets.QPushButton(self.tab)
-        self.line = QtWidgets.QFrame(self.tab)
-        self.line_2 = QtWidgets.QFrame(self.tab)
-        self.analyzeButton = QtWidgets.QPushButton(self.tab)
-        self.emailButton = QtWidgets.QPushButton(self.tab)
-        self.testBox = QtWidgets.QComboBox(self.tab)
-        self.debugBox = QtWidgets.QCheckBox(self.tab)
-        self.tab_2 = QtWidgets.QWidget()
-        self.gridLayout_2 = QtWidgets.QGridLayout(self.tab_2)
-        self.outputBox = QtWidgets.QPlainTextEdit(self.tab)
-        self.label_4 = QtWidgets.QLabel(self.tab_2)
-        self.listWidget = QtWidgets.QListWidget(self.tab_2)
-        self.fileRename = QtWidgets.QLineEdit(self.tab_2)
-        self.fileRenameButton = QtWidgets.QPushButton(self.tab_2)
-        self.label_3 = QtWidgets.QLabel(self.tab_2)
-        self.graphicsView = QtWidgets.QGraphicsView(self.tab_2)
-        self.status_bar = QtWidgets.QStatusBar()
-        self.dialog = QtWidgets.QFileDialog()
-        self.listWidgetItem = QtWidgets.QListWidgetItem()
-        self.project_numbers = []
-        self.project_numbers_short = []
+    def __init__(self, parent=None):
+        super(MainWindow, self).__init__(parent)
 
         self.threadpool = QtCore.QThreadPool()
-        print("Multithreading with maximum %d threads" % self.threadpool.maxThreadCount())
+        print("Multithreading with maximum %d threads" %
+              self.threadpool.maxThreadCount())
+        self.analyzeWorker = None  # Worker
+        self.thread = None  # Thread
+        self.fileNames = None
+        self.analyzed = False
+        self.progress = 0
+        QtCore.QMetaObject.connectSlotsByName(self)
+
+        self.central_widget = QtWidgets.QWidget()
+        self.central_widget = QtWidgets.QWidget()
+        self.central_widget.setObjectName("centralwidget")
+        self.layout_grid = QtWidgets.QGridLayout(self.central_widget)
+
+        self.tab_widget = QtWidgets.QTabWidget()
+        self.label = QtWidgets.QLabel()
+        self.tab = QtWidgets.QWidget()
+        self.progress_bar = QtWidgets.QProgressBar()
+        self.grid_layout = QtWidgets.QGridLayout(self.tab)
+        self.select_files = QtWidgets.QPushButton(self.tab)
+        self.line = QtWidgets.QFrame(self.tab)
+        self.line_2 = QtWidgets.QFrame(self.tab)
+        self.analyze_button = QtWidgets.QPushButton(self.tab)
+        self.email_button = QtWidgets.QPushButton(self.tab)
+        self.test_box = QtWidgets.QComboBox(self.tab)
+        self.debug_box = QtWidgets.QCheckBox(self.tab)
+        self.tab_2 = QtWidgets.QWidget()
+        self.grid_layout_2 = QtWidgets.QGridLayout(self.tab_2)
+        self.output_box = QtWidgets.QPlainTextEdit(self.tab)
+        self.label_4 = QtWidgets.QLabel(self.tab_2)
+        self.list_widget = QtWidgets.QListWidget(self.tab_2)
+        self.file_rename = QtWidgets.QLineEdit(self.tab_2)
+        self.file_rename_button = QtWidgets.QPushButton(self.tab_2)
+        self.label_3 = QtWidgets.QLabel(self.tab_2)
+        self.graphics_view = QtWidgets.QGraphicsView(self.tab_2)
+        self.status_bar = QtWidgets.QStatusBar()
+        self.dialog = QtWidgets.QFileDialog()
+        self.list_widget_item = QtWidgets.QListWidgetItem()
+        self.project_numbers = []
+        self.project_numbers_short = []
 
     # def setup_ui(self, main_window):
         self.setObjectName("MainWindow")
         self.resize(850, 850)
         self.statusBar().setSizeGripEnabled(False)
 
-        self.centralwidget = QtWidgets.QWidget()
-        self.centralwidget.setObjectName("centralwidget")
-        self.layoutGrid = QtWidgets.QGridLayout(self.centralwidget)
+        self.tab_widget = QtWidgets.QTabWidget(self.central_widget)
+        self.tab_widget.setObjectName("tabWidget")
+        self.tab_widget.setSizePolicy(
+            QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        self.layout_grid.addWidget(self.tab_widget, 0, 0, 1, 1)
 
-        self.tabWidget = QtWidgets.QTabWidget(self.centralwidget)
-        self.tabWidget.setObjectName("tabWidget")
-        self.tabWidget.setSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
-        self.layoutGrid.addWidget(self.tabWidget, 0, 0, 1, 1)
-
-        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label = QtWidgets.QLabel(self.central_widget)
         self.label.setObjectName("creatorLabel")
-        self.layoutGrid.addWidget(self.label, 1, 0, 1, 3)
+        self.layout_grid.addWidget(self.label, 1, 0, 1, 3)
 
         self.tab.setObjectName("tab")
-        self.gridLayout.setObjectName("gridLayout")
+        self.grid_layout.setObjectName("gridLayout")
 
-        self.SelectFiles.setObjectName("SelectFiles")
-        self.gridLayout.addWidget(self.SelectFiles, 3, 0, 1, 2)
+        self.select_files.setObjectName("SelectFiles")
+        self.grid_layout.addWidget(self.select_files, 3, 0, 1, 2)
 
-        self.outputBox.setObjectName("outputBox")
-        self.outputBox.setReadOnly(True)
-        self.gridLayout.addWidget(self.outputBox, 5, 0, 1, 8)
+        self.output_box.setObjectName("outputBox")
+        self.output_box.setReadOnly(True)
+        self.grid_layout.addWidget(self.output_box, 5, 0, 1, 8)
 
         self.line.setFrameShape(QtWidgets.QFrame.HLine)
         self.line.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line.setObjectName("line")
-        self.gridLayout.addWidget(self.line, 2, 0, 1, 8)
+        self.grid_layout.addWidget(self.line, 2, 0, 1, 8)
 
         self.line_2.setFrameShape(QtWidgets.QFrame.HLine)
         self.line_2.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_2.setObjectName("line_2")
-        self.gridLayout.addWidget(self.line_2, 4, 0, 1, 8)
+        self.grid_layout.addWidget(self.line_2, 4, 0, 1, 8)
 
-        self.analyzeButton.setObjectName("analyzeButton")
-        self.gridLayout.addWidget(self.analyzeButton, 3, 2, 1, 2)
+        self.analyze_button.setObjectName("analyzeButton")
+        self.grid_layout.addWidget(self.analyze_button, 3, 2, 1, 2)
 
-        self.emailButton.setObjectName("emailButton")
-        self.gridLayout.addWidget(self.emailButton, 3, 4, 1, 2)
+        self.email_button.setObjectName("emailButton")
+        self.grid_layout.addWidget(self.email_button, 3, 4, 1, 2)
 
-        self.testBox.setObjectName("testBox")
-        self.gridLayout.addWidget(self.testBox, 3, 6, 1, 1)
-        self.testBox.setEditable(True)
-        self.testBox.lineEdit().setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
-        self.testBox.addItems(["Live", "Test"])
-        self.testBox.setEditable(False)
+        self.test_box.setObjectName("testBox")
+        self.grid_layout.addWidget(self.test_box, 3, 6, 1, 1)
+        self.test_box.setEditable(True)
+        self.test_box.lineEdit().setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.test_box.addItems(["Live", "Test"])
+        self.test_box.setEditable(False)
 
-        self.debugBox.setObjectName("debugBox")
-        self.gridLayout.addWidget(self.debugBox, 3, 7, 1, 1)
+        self.debug_box.setObjectName("debugBox")
+        self.grid_layout.addWidget(self.debug_box, 3, 7, 1, 1)
 
-        self.progressBar.setObjectName("progressBar")
-        self.progressBar = QtWidgets.QProgressBar()
-        self.progressBar.setStyle(QtWidgets.QStyleFactory.create("GTK"))
-        self.progressBar.setTextVisible(False)
-        self.gridLayout.addWidget(self.progressBar, 6, 0, 1, 8)
+        self.progress_bar.setObjectName("progressBar")
+        self.progress_bar = QtWidgets.QProgressBar()
+        self.progress_bar.setStyle(QtWidgets.QStyleFactory.create("GTK"))
+        self.progress_bar.setTextVisible(False)
+        self.grid_layout.addWidget(self.progress_bar, 6, 0, 1, 8)
 
-        self.tabWidget.addTab(self.tab, "")
+        self.tab_widget.addTab(self.tab, "")
         self.tab_2.setObjectName("tab_2")
-        self.gridLayout_2.setObjectName("gridLayout_2")
+        self.grid_layout_2.setObjectName("gridLayout_2")
 
         self.label_4.setGeometry(QtCore.QRect(10, 10, 81, 16))
         self.label_4.setObjectName("combinedFilesLabel")
-        self.gridLayout_2.addWidget(self.label_4, 0, 0, 1, 2)
+        self.grid_layout_2.addWidget(self.label_4, 0, 0, 1, 2)
 
-        self.listWidget.setGeometry(QtCore.QRect(10, 30, 320, 100))
-        self.listWidget.setObjectName("listWidget")
-        self.gridLayout_2.addWidget(self.listWidget, 1, 0, 5, 5)
+        self.list_widget.setGeometry(QtCore.QRect(10, 30, 320, 100))
+        self.list_widget.setObjectName("listWidget")
+        self.grid_layout_2.addWidget(self.list_widget, 1, 0, 5, 5)
 
-        self.fileRename.setObjectName("file rename")
-        self.gridLayout_2.addWidget(self.fileRename, 6, 0, 1, 4)
+        self.file_rename.setObjectName("file rename")
+        self.grid_layout_2.addWidget(self.file_rename, 6, 0, 1, 4)
 
-        self.fileRenameButton.setObjectName("fileRenameButton")
-        self.gridLayout_2.addWidget(self.fileRenameButton, 6, 4, 1, 1)
+        self.file_rename_button.setObjectName("fileRenameButton")
+        self.grid_layout_2.addWidget(self.file_rename_button, 6, 4, 1, 1)
 
         self.label_3.setGeometry(QtCore.QRect(10, 140, 100, 16))
         self.label_3.setObjectName("pdfOutputLabel")
-        self.gridLayout_2.addWidget(self.label_3, 7, 0, 1, 2)
+        self.grid_layout_2.addWidget(self.label_3, 7, 0, 1, 2)
 
-        self.graphicsView.setGeometry(QtCore.QRect(10, 160, 320, 400))
-        self.graphicsView.setObjectName("graphicsView")
-        self.gridLayout_2.addWidget(self.graphicsView, 8, 0, 20, 5)
-        self.graphicsView.setViewportUpdateMode(QtWidgets.QGraphicsView.FullViewportUpdate)
+        self.graphics_view.setGeometry(QtCore.QRect(10, 160, 320, 400))
+        self.graphics_view.setObjectName("graphicsView")
+        self.grid_layout_2.addWidget(self.graphics_view, 8, 0, 20, 5)
+        self.graphics_view.setViewportUpdateMode(
+            QtWidgets.QGraphicsView.FullViewportUpdate)
 
-        self.tabWidget.addTab(self.tab_2, "")
-        self.tabWidget.raise_()
+        self.tab_widget.addTab(self.tab_2, "")
+        self.tab_widget.raise_()
         self.label.raise_()
 
-        self.setCentralWidget(self.centralwidget)
+        self.setCentralWidget(self.central_widget)
         self.status_bar = QtWidgets.QStatusBar()
         self.status_bar.setObjectName("status bar")
         self.setStatusBar(self.status_bar)
 
         self.translate_ui()
-        self.tabWidget.setCurrentIndex(0)
+        self.tab_widget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(self)
 
-        self.setTabOrder(self.SelectFiles, self.analyzeButton)
-        self.setTabOrder(self.analyzeButton, self.outputBox)
-        self.setTabOrder(self.outputBox, self.tab)
+        self.setTabOrder(self.select_files, self.analyze_button)
+        self.setTabOrder(self.analyze_button, self.output_box)
+        self.setTabOrder(self.output_box, self.tab)
         self.setTabOrder(self.tab, self.tab_2)
 
         self.show()
@@ -178,27 +182,34 @@ class MainWindow(QtWidgets.QMainWindow):
     def translate_ui(self):
         _translate = QtCore.QCoreApplication.translate
         self.setWindowTitle(_translate("MainWindow", "Englobe Sorter"))
-        self.label.setText(_translate("MainWindow", "Created By Brandon Gorman"))
-        self.SelectFiles.setText(_translate("MainWindow", "Select Files"))
-        self.SelectFiles.clicked.connect(self.select_files_handler)
-        self.fileRenameButton.setWhatsThis(_translate("MainWindow", "Rename the currently selected file"))
-        self.fileRenameButton.setText(_translate("MainWindow", "Rename"))
-        self.fileRenameButton.clicked.connect(self.file_rename_button_handler)
-        self.analyzeButton.setText(_translate("MainWindow", "Analyze"))
-        self.analyzeButton.clicked.connect(self.analyze_button_handler)
-        self.emailButton.setText(_translate("MainWindow", "E-Mail"))
-        self.debugBox.setText(_translate("MainWindow", "Debug"))
-        self.emailButton.clicked.connect(self.email_button_handler)
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("MainWindow", "Input"))
+        self.label.setText(_translate(
+            "MainWindow", "Created By Brandon Gorman"))
+        self.select_files.setText(_translate("MainWindow", "Select Files"))
+        self.select_files.clicked.connect(self.select_files_handler)
+        self.file_rename_button.setWhatsThis(_translate(
+            "MainWindow", "Rename the currently selected file"))
+        self.file_rename_button.setText(_translate("MainWindow", "Rename"))
+        self.file_rename_button.clicked.connect(
+            self.file_rename_button_handler)
+        self.analyze_button.setText(_translate("MainWindow", "Analyze"))
+        self.analyze_button.clicked.connect(self.analyze_button_handler)
+        self.email_button.setText(_translate("MainWindow", "E-Mail"))
+        self.debug_box.setText(_translate("MainWindow", "Debug"))
+        self.email_button.clicked.connect(self.email_button_handler)
+        self.tab_widget.setTabText(self.tab_widget.indexOf(
+            self.tab), _translate("MainWindow", "Input"))
         self.label_3.setText(_translate("MainWindow", "File Output Viewer:"))
         self.label_4.setText(_translate("MainWindow", "Combined Files:"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("MainWindow", "Output"))
-        self.listWidget.itemClicked.connect(self.list_widget_handler)
-        self.listWidget.itemDoubleClicked.connect(self.rename_file_handler)
+        self.tab_widget.setTabText(self.tab_widget.indexOf(
+            self.tab_2), _translate("MainWindow", "Output"))
+        self.list_widget.itemClicked.connect(self.list_widget_handler)
+        self.list_widget.itemDoubleClicked.connect(self.rename_file_handler)
 
     def email_button_handler(self):
-        signature_path = os.path.abspath(os.path.join(home_dir + r"\\Signature\\concrete.htm"))
-        signature_path_28 = os.path.abspath(os.path.join(home_dir + r"\\Signature\\concrete28.htm"))
+        signature_path = os.path.abspath(os.path.join(
+            home_dir + r"\\Signature\\concrete.htm"))
+        signature_path_28 = os.path.abspath(os.path.join(
+            home_dir + r"\\Signature\\concrete28.htm"))
         if not self.analyzed and self.fileNames:
             if os.path.isfile(signature_path):
                 with open(signature_path, "r") as file:
@@ -214,9 +225,9 @@ class MainWindow(QtWidgets.QMainWindow):
             button_reply = msg.question(msg, "", "Do you want to create e-mails for non-analyzed files?",
                                         QtWidgets.QMessageBox.Yes | QtWidgets.QMessageBox.No)
             if button_reply == QtWidgets.QMessageBox.No:
-                self.outputBox.appendPlainText("E-Mails not generated\n")
+                self.output_box.appendPlainText("E-Mails not generated\n")
             elif button_reply == QtWidgets.QMessageBox.Yes:
-                json_setup(self.testBox.currentText())
+                json_setup(self.test_box.currentText())
                 for file in self.fileNames:
                     description = file.split("_")
                     description = description[1]
@@ -232,7 +243,8 @@ class MainWindow(QtWidgets.QMainWindow):
                             dexter_number = re.search(r"Dexter_([\d-]*)[_\dA-z]", email_recipient_subject,
                                                       re.I).groups()
                             dexter_number = dexter_number[-1]
-                        email_recipient_subject = email_recipient_subject.replace("%%", dexter_number)
+                        email_recipient_subject = email_recipient_subject.replace(
+                            "%%", dexter_number)
                     try:
                         outlook = win32.Dispatch('outlook.application')
                         mail = outlook.CreateItem(0)
@@ -246,10 +258,10 @@ class MainWindow(QtWidgets.QMainWindow):
                         mail.Attachments.Add(attachment)
                         mail.Save()
                         e = "Drafted email for: {0}".format(title)
-                        self.outputBox.appendPlainText(e)
+                        self.output_box.appendPlainText(e)
                     except Exception as e:
                         print(e)
-                        self.outputBox.appendPlainText(e)
+                        self.output_box.appendPlainText(e)
                         pass
         if self.analyzed:
             if os.path.isfile(signature_path):
@@ -263,12 +275,14 @@ class MainWindow(QtWidgets.QMainWindow):
                 pass
             all_list_titles = []
             all_list_data = []
-            for i in range(self.listWidget.count()):
-                all_list_data.append(self.listWidget.item(i).data(QtCore.Qt.UserRole).split("%%")[0])
-                all_list_titles.append(self.listWidget.item(i).text())
+            for i in range(self.list_widget.count()):
+                all_list_data.append(self.list_widget.item(
+                    i).data(QtCore.Qt.UserRole).split("%%")[0])
+                all_list_titles.append(self.list_widget.item(i).text())
             for i, project_number in enumerate(self.project_numbers):
                 if self.project_numbers_short[i][0] == "P":
-                    self.project_numbers_short[i] = self.project_numbers_short[i].replace("P-", "P-00")
+                    self.project_numbers_short[i] = self.project_numbers_short[i].replace(
+                        "P-", "P-00")
                 project_number, project_number_short, \
                     recipients, recipients_cc, subject = project_info(project_number, self.project_numbers_short[i],
                                                                       all_list_data[i], None, self.analyzed)
@@ -276,7 +290,8 @@ class MainWindow(QtWidgets.QMainWindow):
                 if "Dexter" in subject:
                     dexter_number = "NA"
                     if re.search(r"Dexter_([\d-]*)[_\dA-z]", all_list_titles[i], re.I) is not None:
-                        dexter_number = re.search(r"Dexter_([\d-]*)[_\dA-z]", all_list_titles[i], re.I).groups()
+                        dexter_number = re.search(
+                            r"Dexter_([\d-]*)[_\dA-z]", all_list_titles[i], re.I).groups()
                         dexter_number = dexter_number[-1]
                     subject = subject.replace("%%", dexter_number)
                 try:
@@ -292,15 +307,15 @@ class MainWindow(QtWidgets.QMainWindow):
                     mail.Attachments.Add(attachment)
                     mail.Save()
                     e = "Drafted email for: {0}".format(all_list_titles[i])
-                    self.outputBox.appendPlainText(e)
+                    self.output_box.appendPlainText(e)
                 except Exception as e:
                     print(e)
-                    self.outputBox.appendPlainText(str(e))
+                    self.output_box.appendPlainText(str(e))
                     pass
 
     def debug_check(self):
         global debug
-        if self.debugBox.isChecked():
+        if self.debug_box.isChecked():
             debug = True
         else:
             debug = False
@@ -309,29 +324,34 @@ class MainWindow(QtWidgets.QMainWindow):
         self.open_file_dialog()
 
     def open_file_dialog(self):
-        self.dialog = QtWidgets.QFileDialog(directory=str(os.path.abspath(os.path.join(os.getcwd(), r"..\.."))))
+        self.dialog = QtWidgets.QFileDialog(directory=str(
+            os.path.abspath(os.path.join(os.getcwd(), r"..\.."))))
         self.fileNames, filters = QtWidgets.QFileDialog.getOpenFileNames()
 
         tuple(self.fileNames)
         if len(self.fileNames) == 1:
-            file_names_string = "(" + str(len(self.fileNames)) + ")" + " file has been selected: \n"
+            file_names_string = "(" + str(len(self.fileNames)) + \
+                ")" + " file has been selected: \n"
         else:
-            file_names_string = "(" + str(len(self.fileNames)) + ")" + " files have been selected: \n"
+            file_names_string = "(" + str(len(self.fileNames)) + \
+                ")" + " files have been selected: \n"
         for item in self.fileNames:
             file_names_string = file_names_string + item + "\n"
-        self.outputBox.appendPlainText(file_names_string)
+        self.output_box.appendPlainText(file_names_string)
 
     def rename_file_handler(self):
-        if self.listWidget.isPersistentEditorOpen(self.listWidget.currentItem()):
-            self.listWidget.closePersistentEditor(self.listWidget.currentItem())
-            self.listWidget.editItem(self.listWidget.currentItem())
+        if self.list_widget.isPersistentEditorOpen(self.list_widget.currentItem()):
+            self.list_widget.closePersistentEditor(
+                self.list_widget.currentItem())
+            self.list_widget.editItem(self.list_widget.currentItem())
         else:
-            self.listWidget.editItem(self.listWidget.currentItem())
+            self.list_widget.editItem(self.list_widget.currentItem())
 
     def file_rename_button_handler(self):
-        file_path = self.listWidget.currentItem().data(QtCore.Qt.UserRole).split("%%")
+        file_path = self.list_widget.currentItem().data(QtCore.Qt.UserRole).split("%%")
         file_path_transit_src = file_path[0]
-        file_path_project_src = file_path[1]  # Project path may be changed if project number updated so declare up here
+        # Project path may be changed if project number updated so declare up here
+        file_path_project_src = file_path[1]
 
         # See if project number is the edited string. If it is and description is == "SomeProjectDescription"
         # Then the project was previously not detected properly so assume the project edit is correct and find
@@ -344,16 +364,18 @@ class MainWindow(QtWidgets.QMainWindow):
         project_number = ""
         project_number_short = ""
         old_package = ""
-        old_title = self.listWidget.currentItem().text()
+        old_title = self.list_widget.currentItem().text()
         project_details_changed = False
-        new_title = self.fileRename.text()
+        new_title = self.file_rename.text()
         if re.search(r"-([\dPBpb\.-]+)_", old_title, re.I) is not None:
-            old_project_number = re.search(r"-([\dPBpb\.-]+)_", old_title, re.I).groups()
+            old_project_number = re.search(
+                r"-([\dPBpb\.-]+)_", old_title, re.I).groups()
             old_project_number = old_project_number[-1]
         elif re.search(r"-(NA)_", old_title, re.I) is not None:
             old_project_number = "NA"
         if re.search(r"-([\dPBpb\.-]+)_", new_title, re.I) is not None:
-            new_project_number = re.search(r"-([\dPBpb\.-]+)_", new_title, re.I).groups()
+            new_project_number = re.search(
+                r"-([\dPBpb\.-]+)_", new_title, re.I).groups()
             new_project_number = new_project_number[-1]
         if old_project_number != new_project_number:
             project_number, project_number_short, \
@@ -365,18 +387,25 @@ class MainWindow(QtWidgets.QMainWindow):
             old_package = old_package[-1]
 
         if project_details_changed:
-            updated_file_details = old_title.replace("SomeProjectDescription", description)
-            updated_package = detect_package_number(file_path_project_src, debug)[0]
-            updated_file_details = updated_file_details.replace(old_package, updated_package)
-            updated_file_details = updated_file_details.replace(old_project_number, project_number_short)
+            updated_file_details = old_title.replace(
+                "SomeProjectDescription", description)
+            updated_package = detect_package_number(
+                file_path_project_src, debug)[0]
+            updated_file_details = updated_file_details.replace(
+                old_package, updated_package)
+            updated_file_details = updated_file_details.replace(
+                old_project_number, project_number_short)
             rename_transit_len = 260 - len(
                 str(file_path_transit_src.replace(file_path_transit_src.split("\\").pop(), "")))
             rename_project_length = 260 - len(str(file_path_project_src))
             if len(updated_file_details) > rename_transit_len or len(updated_file_details) > rename_project_length:
-                updated_file_details = updated_file_details.replace("Concrete", "Conc")
+                updated_file_details = updated_file_details.replace(
+                    "Concrete", "Conc")
             if len(updated_file_details) > rename_transit_len or len(updated_file_details) > rename_project_length:
-                updated_file_details = updated_file_details.replace("-2022", "")
-                updated_file_details = updated_file_details.replace("-2021", "")
+                updated_file_details = updated_file_details.replace(
+                    "-2022", "")
+                updated_file_details = updated_file_details.replace(
+                    "-2021", "")
             if len(updated_file_details) > rename_transit_len or len(updated_file_details) > rename_project_length:
                 if rename_project_length > rename_transit_len:
                     cut = rename_project_length + 4
@@ -385,9 +414,11 @@ class MainWindow(QtWidgets.QMainWindow):
                 updated_file_details = updated_file_details.replace(".pdf", "")
                 updated_file_details = updated_file_details[:-cut] + "LONG.pdf"
             rename_path_transit = os.path.abspath(os.path.join(
-                file_path_transit_src.replace(file_path_transit_src.split("\\").pop(), ""),
+                file_path_transit_src.replace(
+                    file_path_transit_src.split("\\").pop(), ""),
                 updated_file_details + ".pdf"))
-            rename_path_project = os.path.abspath(os.path.join(file_path_project_src, updated_file_details + ".pdf"))
+            rename_path_project = os.path.abspath(os.path.join(
+                file_path_project_src, updated_file_details + ".pdf"))
             os.rename(file_path_transit_src, rename_path_transit)
             if not os.path.isfile(file_path_project_src):
                 file_path_project_src = rename_path_project
@@ -396,30 +427,39 @@ class MainWindow(QtWidgets.QMainWindow):
                     os.rename(file_path_project_src, rename_path_project)
             else:
                 shutil.copy(rename_path_transit, rename_path_project)
-            self.listWidget.currentItem().setText(updated_file_details)
+            self.list_widget.currentItem().setText(updated_file_details)
             data = rename_path_transit + "%%" + rename_path_project
-            self.listWidget.currentItem().setData(QtCore.Qt.UserRole, data)
-            self.fileRename.setText(updated_file_details)
-            self.project_numbers_short[self.listWidget.currentRow()] = project_number_short
-            self.project_numbers[self.listWidget.currentRow()] = project_number
+            self.list_widget.currentItem().setData(QtCore.Qt.UserRole, data)
+            self.file_rename.setText(updated_file_details)
+            self.project_numbers_short[self.list_widget.currentRow(
+            )] = project_number_short
+            self.project_numbers[self.list_widget.currentRow()
+                                 ] = project_number
         else:
             # 254 to accommodate the .pdf
-            rename_transit_len = 254 - len(file_path_transit_src.replace(file_path_transit_src.split("\\").pop(), ""))
-            rename_project_len = 254 - len(file_path_project_src.replace(file_path_project_src.split("\\").pop(), ""))
-            if len(self.fileRename.text()) > rename_transit_len or len(self.fileRename.text()) > rename_project_len:
+            rename_transit_len = 254 - \
+                len(file_path_transit_src.replace(
+                    file_path_transit_src.split("\\").pop(), ""))
+            rename_project_len = 254 - \
+                len(file_path_project_src.replace(
+                    file_path_project_src.split("\\").pop(), ""))
+            if len(self.file_rename.text()) > rename_transit_len or len(self.file_rename.text()) > rename_project_len:
                 print("Filename too long")
                 if rename_transit_len > rename_project_len:
-                    msg_string = f"Filename too long. Reduce by {len(self.fileRename.text()) - rename_transit_len}"
+                    msg_string = f"Filename too long. Reduce by {len(self.file_rename.text()) - rename_transit_len}"
                 else:
-                    msg_string = f"Filename too long. Reduce by {len(self.fileRename.text()) - rename_project_len}"
-                ctypes.windll.user32.MessageBoxW(0, msg_string, "Filename Too Long", 1)
+                    msg_string = f"Filename too long. Reduce by {len(self.file_rename.text()) - rename_project_len}"
+                ctypes.windll.user32.MessageBoxW(
+                    0, msg_string, "Filename Too Long", 1)
             else:
                 rename_path_transit = os.path.abspath(os.path.join(
-                    file_path_transit_src.replace(file_path_transit_src.split("\\").pop(), ""),
-                    str(self.fileRename.text()) + ".pdf"))
+                    file_path_transit_src.replace(
+                        file_path_transit_src.split("\\").pop(), ""),
+                    str(self.file_rename.text()) + ".pdf"))
                 rename_path_project = os.path.abspath(os.path.join(
-                    file_path_project_src.replace(file_path_project_src.split("\\").pop(), ""),
-                    str(self.fileRename.text()) + ".pdf"))
+                    file_path_project_src.replace(
+                        file_path_project_src.split("\\").pop(), ""),
+                    str(self.file_rename.text()) + ".pdf"))
                 try:
                     os.rename(file_path_transit_src, rename_path_transit)
                 except Exception:
@@ -429,11 +469,12 @@ class MainWindow(QtWidgets.QMainWindow):
                         os.rename(file_path_project_src, rename_path_project)
                     except Exception:
                         pass
-                self.listWidget.currentItem().setText(self.fileRename.text())
+                self.list_widget.currentItem().setText(self.file_rename.text())
                 if debug:
-                    print('Renamed File Path: \n{0}\n{1}'.format(file_path_transit_src, file_path_project_src))
+                    print('Renamed File Path: \n{0}\n{1}'.format(
+                        file_path_transit_src, file_path_project_src))
                 data = rename_path_transit + "%%" + rename_path_project
-                self.listWidget.currentItem().setData(QtCore.Qt.UserRole, data)
+                self.list_widget.currentItem().setData(QtCore.Qt.UserRole, data)
 
     def evt_analyze_complete(self, results):
         print_string = results[0]
@@ -441,40 +482,43 @@ class MainWindow(QtWidgets.QMainWindow):
         data = results[2]
         project_number = results[3]
         project_number_short = results[4]
-        self.outputBox.appendPlainText(print_string)
-        self.listWidgetItem = QtWidgets.QListWidgetItem(file_title)
-        self.listWidgetItem.setData(QtCore.Qt.UserRole, data)
-        self.listWidget.addItem(self.listWidgetItem)
+        self.output_box.appendPlainText(print_string)
+        self.list_widget_item = QtWidgets.QListWidgetItem(file_title)
+        self.list_widget_item.setData(QtCore.Qt.UserRole, data)
+        self.list_widget.addItem(self.list_widget_item)
         self.project_numbers.append(project_number)
         self.project_numbers_short.append(project_number_short)
 
     def evt_analyze_progress(self, val):
         self.progress += val
-        self.progressBar.setValue(int(self.progress / len(self.fileNames)))
+        self.progress_bar.setValue(int(self.progress / len(self.fileNames)))
 
     def analyze_button_handler(self):
         if self.fileNames is not None:
-            json_setup(self.testBox.currentText())
+            json_setup(self.test_box.currentText())
             self.debug_check()
             self.analyzed = False
             self.progress = 0
-            self.progressBar.setValue(0)
-            self.outputBox.appendPlainText("Analysis Started...\n")
+            self.progress_bar.setValue(0)
+            self.output_box.appendPlainText("Analysis Started...\n")
             self.data_processing()
             self.analyzed = True
         else:
-            self.outputBox.appendPlainText("Please select at least 1 file to analyze...\n")
-        self.analyzeButton.setEnabled(True)
+            self.output_box.appendPlainText(
+                "Please select at least 1 file to analyze...\n")
+        self.analyze_button.setEnabled(True)
 
     def analyze_queue_button_handler(self):
-        self.outputBox.appendPlainText("Analyzing Queue Folder...\n")
+        self.output_box.appendPlainText("Analyzing Queue Folder...\n")
 
     def list_widget_handler(self):
-        file_path = str(self.listWidget.currentItem().data(QtCore.Qt.UserRole)).split("%%")
+        file_path = str(self.list_widget.currentItem().data(
+            QtCore.Qt.UserRole)).split("%%")
         file_path_transit_src = file_path[0]
         image_jpeg = []
         try:
-            image_jpeg = convert_from_path(file_path_transit_src, fmt="jpeg", poppler_path=poppler_path)
+            image_jpeg = convert_from_path(
+                file_path_transit_src, fmt="jpeg", poppler_path=poppler_path)
         except Exception as e:
             print(e)
         if image_jpeg:
@@ -487,13 +531,14 @@ class MainWindow(QtWidgets.QMainWindow):
             name_jpeg = file_path_transit_src.replace(".pdf", ".jpg")
             result.save(name_jpeg, 'JPEG')
             pix = QtGui.QPixmap(name_jpeg)
-            pix = pix.scaledToWidth(self.graphicsView.width())
+            pix = pix.scaledToWidth(self.graphics_view.width())
             item = QtWidgets.QGraphicsPixmapItem(pix)
             scene.addItem(item)
-            self.graphicsView.setScene(scene)
+            self.graphics_view.setScene(scene)
             os.remove(name_jpeg)
-            set_text = file_path_transit_src.split("\\").pop().replace(".pdf", "")
-            self.fileRename.setText(set_text)
+            set_text = file_path_transit_src.split(
+                "\\").pop().replace(".pdf", "")
+            self.file_rename.setText(set_text)
         else:
             print("image_jpeg list is empty")
 
@@ -518,10 +563,14 @@ class MainWindow(QtWidgets.QMainWindow):
 
         # Import images from file path "f" using pdf to image to open
         for f in self.fileNames:
-            self.analyzeWorker = WorkerAnalyzeThread(fileName=f, debug=debug, analyzed=self.analyzed)
-            self.analyzeWorker.analyze_progress.connect(self.evt_analyze_progress)
-            self.analyzeWorker.analyze_complete.connect(self.evt_analyze_complete)
-            self.analyzeWorker.start()
+            self.analyzeWorker = WorkerAnalyzeThread(
+                fileName=f, debug=debug, analyzed=self.analyzed)
+            self.analyzeWorker.signals.progress.connect(
+                self.evt_analyze_progress)
+            self.analyzeWorker.signals.result.connect(
+                self.evt_analyze_complete)
+            # thread_pool.start(WorkerAnalyzeThread)
+            self.threadpool.start(self.analyzeWorker)
 
 
 if __name__ == "__main__":
