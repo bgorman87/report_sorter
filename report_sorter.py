@@ -24,7 +24,6 @@ def output(self):
     self.output_box.appendPlainText("Analyzing...\n")
 
 
-# noinspection PyTypeChecker
 class MainWindow(QtWidgets.QMainWindow):
 
     def __init__(self, parent=None):
