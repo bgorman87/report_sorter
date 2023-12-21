@@ -1,4 +1,4 @@
-# Report Sorter
+# Report Sorter v1 (v2 in development)
 This program has multi-threaded functionality to:
 - Analyze PDF document contents
   - Uses Poppler to transform PDF to Image
