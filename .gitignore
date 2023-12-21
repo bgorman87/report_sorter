@@ -1,0 +1,8 @@
+venv
+**venv**
+*.json
+.vscode
+.idea
+Signature/*
+**cpython**
+!Signature/example_signature**
